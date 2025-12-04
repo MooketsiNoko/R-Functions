@@ -1,0 +1,62 @@
+---
+title: "Functions the package can use and examples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Functions the package can use and examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753F25mooketsi)
+```
+
+
+# Introduction
+
+This package contains R functions designed mainly to interpret data, with some displaying visual representations and others returning keys statistics about the data.
+
+## Function 1 - myncurve
+
+Plots a normal curve with mean mu and standard deviation sigma, shades the area from the left up to a, and returns the numerical value of that shaded probability.
+
+```{r, fig.width=6, fig.height=4, out.width="80%"}
+myncurve(mu=10,sigma=5, a=6)
+```
+
+## Function 2 - myboot2
+
+Performs a bootstrap on the sample x using the statistic fun, runs it for iter iterations, plots the bootstrap distribution, and returns the confidence interval, the statistic used, the original sample, and the bootstrap estimates (Xstat).
+
+```{r, fig.width=6, fig.height=6, out.width="80%"}
+myboot2(10000,x=rnorm(25,mean=25,sd=10))
+```
+
+## Function 3 - ntickets
+
+Computes the optimal number of tickets to sell for an overbooking scenario, produces two plots of the objective function (discrete and continuous), and returns a list containing the optimal discrete and continuous solutions (nd, nc) along with N, p, and gamma).
+
+```{r, fig.width=7, fig.height=10, out.width="90%"}
+
+ntickets(400,0.02,0.95)
+```
+
+## Function 4 - mybinplot
+
+Simulates iter runs of a Binomial(n, p) process and displays the resulting distribution as a bar plot.
+
+```{r, fig.width=6, fig.height=4, out.width="80%"}
+mybinplot(100,10,0.7)
+```
+
+
+
+
+
