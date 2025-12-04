@@ -16,6 +16,11 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 \item{alpha}{Confidence interval}
 
 \item{cx}{Text label size}
+<<<<<<< HEAD
+
+\item{...}{Plotting settings}
+=======
+>>>>>>> 88f302ec73812c4ee0704a0f1c335c148d57bf92
 }
 \value{
 Confidence interval, function used, the sample and Xstat

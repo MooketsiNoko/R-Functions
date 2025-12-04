@@ -7,8 +7,18 @@
 #' @returns a curve with the shaded area between the curve and x-axis along with the calculated area
 #' @export
 #'
+<<<<<<< HEAD
+#' @importFrom grDevices rainbow
+#' @importFrom graphics abline barplot curve hist layout legend par polygon segments text
+#' @importFrom stats dnorm dpois pbinom pnorm quantile rpois uniroot
+#'
 #' @examples myncurve(mu=10,sigma=5, a=6)
 myncurve <- function(mu, sigma, a) {
+  x <- NULL
+=======
+#' @examples myncurve(mu=10,sigma=5, a=6)
+myncurve <- function(mu, sigma, a) {
+>>>>>>> 88f302ec73812c4ee0704a0f1c335c148d57bf92
   stopifnot(is.finite(mu), is.finite(a), is.finite(sigma), sigma > 0)
 
   # Plot window: ±3 standard deviations around the mean
