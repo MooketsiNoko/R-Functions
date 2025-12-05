@@ -3,10 +3,14 @@
 #' @param n sample size
 #' @param iter number of iterations
 #' @param lambda the Poisson rate parameter
+#' @param ... Graphing settings
 #'
 #' @returns histogram of the sample mean, a barplot of the sample Y and  probablitiy function for the distribution.
 #' @export
 #'
+#' @importFrom grDevices rainbow
+#' @importFrom graphics abline barplot curve hist layout legend par polygon segments text
+#' @importFrom stats dnorm dpois pbinom pnorm quantile rpois uniroot
 #' @examples mycltp(n=10,iter=10000)
 mycltp=function(n,iter,lambda=10,...){
 

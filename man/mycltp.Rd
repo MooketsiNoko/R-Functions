@@ -12,6 +12,8 @@ mycltp(n, iter, lambda = 10, ...)
 \item{iter}{number of iterations}
 
 \item{lambda}{the Poisson rate parameter}
+
+\item{...}{Graphing settings}
 }
 \value{
 histogram of the sample mean, a barplot of the sample Y and  probablitiy function for the distribution.

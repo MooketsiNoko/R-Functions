@@ -7,6 +7,10 @@
 #' @returns two Objective function Vs n plots, one for discrete and one for the continuous case, and a list of values containing nd, nc, N, p and gammma.
 #' @export
 #'
+#' @importFrom grDevices rainbow
+#' @importFrom graphics abline barplot curve hist layout legend par polygon segments text
+#' @importFrom stats dnorm dpois pbinom pnorm quantile rpois uniroot
+#'
 #' @examples ntickets(400,0.02,0.95)
 ntickets <- function(N, gamma, p) {
 

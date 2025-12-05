@@ -7,6 +7,10 @@
 #' @returns Bar plot
 #' @export
 #'
+#' @importFrom grDevices rainbow
+#' @importFrom graphics abline barplot curve hist layout legend par polygon segments text
+#' @importFrom stats dnorm dpois pbinom pnorm quantile rpois uniroot
+#'
 #' @examples mybinplot(100,10,0.7)
 
 mybinplot = function(iter=100,n=10, p=0.5){

@@ -5,7 +5,11 @@
 #' @param fun function being bootstrapped
 #' @param alpha Confidence interval
 #' @param cx Text label size
+#' @param ... Graphing settings
 #'
+#' @importFrom grDevices rainbow
+#' @importFrom graphics abline barplot curve hist layout legend par polygon segments text
+#' @importFrom stats dnorm dpois pbinom pnorm quantile rpois uniroot
 #' @returns Confidence interval, function used, the sample and Xstat
 #' @export
 #'
