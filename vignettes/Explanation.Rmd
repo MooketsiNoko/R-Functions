@@ -15,9 +15,8 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(MATH4753F25mooketsi)
+library(F25mooketsi)
 ```
-
 
 # Introduction
 
@@ -55,8 +54,4 @@ Simulates iter runs of a Binomial(n, p) process and displays the resulting distr
 ```{r, fig.width=6, fig.height=4, out.width="80%"}
 mybinplot(100,10,0.7)
 ```
-
-
-
-
 

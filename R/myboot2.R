@@ -5,28 +5,14 @@
 #' @param fun function being bootstrapped
 #' @param alpha Confidence interval
 #' @param cx Text label size
-<<<<<<< HEAD
-#' @param ... Plotting settings
-=======
->>>>>>> 88f302ec73812c4ee0704a0f1c335c148d57bf92
 #'
 #' @returns Confidence interval, function used, the sample and Xstat
 #' @export
 #'
-<<<<<<< HEAD
-#' @importFrom grDevices rainbow
-#' @importFrom graphics abline barplot curve hist layout legend par polygon segments text
-#' @importFrom stats dnorm dpois pbinom pnorm quantile rpois uniroot
-#'
-#' @examples myboot2(10000,x=rnorm(25,mean=25,sd=10))
-myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where the ... is repeated in the code
-  n=length(x)   #sample size
-=======
 #' @examples myboot2(10000,x=rnorm(25,mean=25,sd=10))
 myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where the ... is repeated in the code
   n=length(x)   #sample size
 
->>>>>>> 88f302ec73812c4ee0704a0f1c335c148d57bf92
   y=sample(x,n*iter,replace=TRUE)
   rs.mat=matrix(y,nrow=n,ncol=iter,byrow=TRUE)
   xstat=apply(rs.mat,2,fun) # xstat is a vector and will have iter values in it
